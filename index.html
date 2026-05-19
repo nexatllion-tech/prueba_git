@@ -1,12 +1,504 @@
+
+Entorno cliente IFCD0210
+Entorno cliente IFCD0210
+Próximas entregas
+¡Yuju! ¡No tienes que entregar nada pronto!
+
+Publicado por alexandra molto
+alexandra molto
+Fecha de creación: 15:0615:06
+Plantillas
+index4.html
+Texto
+
+index3.html
+Texto
+
+index2.html
+Texto
+
+index.html
+Texto
+
+
+Publicado por alexandra molto
+alexandra molto
+Fecha de creación: 15:0515:05 (Última modificación: 15:19)
+Git
+Mostrando 
+cheatSheet git.png
+Anexo GIT.docx
+Microsoft Word
+
+assignment
+Tarea: "EVALUABLE - Proyecto final Javascript y manejo de DOM"
+alexandra molto ha publicado una nueva tarea: EVALUABLE - Proyecto final Javascript y manejo de DOM
+Fecha de creación: 13 may13 may
+
+Publicado por alexandra molto
+alexandra molto
+Fecha de creación: 13 may13 may
+HTML para el juego del ahorcado:
+index.html
+HTML
+
+
+Publicado por alexandra molto
+alexandra molto
+Fecha de creación: 12 may12 may
+HTML piedra papel tijera
+piedrapapeltijera.html
+HTML
+
+
+Publicado por alexandra molto
+alexandra molto
+Fecha de creación: 11 may11 may
+Temario JS
+Temario JS
+Documentos de Google
+
+
+Publicado por alexandra molto
+alexandra molto
+Fecha de creación: 11 may11 may
+Fetch
+9. ejercicio guiado fetch y API rest
+Documentos de Google
+
+
+Publicado por alexandra molto
+alexandra molto
+Fecha de creación: 6 may6 may
+Chuletas de manejo de DOM
+cheatsheet_eventos_dom.pdf
+PDF
+
+cheatsheet_dom_moderno_js.pdf
+PDF
+
+
+Publicado por alexandra molto
+alexandra molto
+Fecha de creación: 5 may5 may
+8: Objetos
+8.Objetos
+Documentos de Google
+
+
+Publicado por alexandra molto
+alexandra molto
+Fecha de creación: 4 may4 may (Última modificación: 5 may)
+Proyecto final
+Mostrando 
+proyecto.png
+Enunciado proyecto final
+Documentos de Google
+
+rick.js
+JavaScript
+
+Tablón
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Creative</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Space Grotesk',sans-serif;
+    }
+
+    body{
+      background:#f6f3ee;
+      color:#111827;
+      overflow-x:hidden;
+    }
+
+    .gradient{
+      background:linear-gradient(135deg,#ff7b54,#ffb26b,#ffd56f);
+    }
+
+    .hero-bg{
+      background:
+      radial-gradient(circle at top left, rgba(255,123,84,.25), transparent 30%),
+      radial-gradient(circle at bottom right, rgba(255,178,107,.25), transparent 30%);
+    }
+
+    .card{
+      transition:.35s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .btn{
+      transition:.3s ease;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      opacity:.9;
+    }
+
+    .section-title{
+      font-size:clamp(2.5rem,5vw,5rem);
+      line-height:1;
+      font-weight:700;
+    }
+
+  </style>
 </head>
+
 <body>
-    <h1>Proyecto de pruebas git</h1>
-    <p></p>
+
+  <!-- NAV -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-[#f6f3ee]/90 backdrop-blur border-b border-black/5">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="flex items-center justify-between h-20">
+
+        <a href="#home" class="text-2xl font-bold">
+          NOAH.
+        </a>
+
+        <nav class="hidden md:flex gap-10 font-medium">
+
+          <a href="#home" class="hover:text-orange-500 transition">
+            Inicio
+          </a>
+
+          <a href="#projects" class="hover:text-orange-500 transition">
+            Proyectos
+          </a>
+
+          <a href="#about" class="hover:text-orange-500 transition">
+            Sobre mí
+          </a>
+
+          <a href="#contact" class="hover:text-orange-500 transition">
+            Contacto
+          </a>
+
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="min-h-screen hero-bg flex items-center">
+
+    <div class="max-w-7xl mx-auto px-6 pt-32">
+
+      <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+        <!-- LEFT -->
+        <div>
+
+          <span class="gradient text-black px-5 py-2 rounded-full font-medium inline-block mb-8">
+            Frontend Developer & UI Designer
+          </span>
+
+          <h1 class="section-title mb-8">
+
+            Diseño
+            experiencias
+            digitales
+            que impactan.
+
+          </h1>
+
+          <p class="text-gray-600 text-lg leading-relaxed max-w-xl mb-10">
+
+            Desarrollo interfaces modernas y memorables enfocadas en estética,
+            rendimiento y experiencia de usuario.
+
+          </p>
+
+          <div class="flex flex-wrap gap-5">
+
+            <a href="#projects"
+               class="btn bg-black text-white px-8 py-4 rounded-full font-medium">
+              Ver portfolio
+            </a>
+
+            <a href="#contact"
+               class="btn border border-black px-8 py-4 rounded-full font-medium">
+              Contactar
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="relative">
+
+          <div class="gradient rounded-[3rem] p-4 rotate-3">
+
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
+              class="rounded-[2.5rem] w-full h-[600px] object-cover -rotate-3"
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-32">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="mb-20">
+
+        <span class="text-orange-500 uppercase tracking-widest text-sm font-bold">
+          Portfolio
+        </span>
+
+        <h2 class="section-title mt-4">
+          Proyectos recientes
+        </h2>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- CARD -->
+        <div class="card bg-white rounded-[2rem] overflow-hidden shadow-lg">
+
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+            class="h-64 w-full object-cover"
+          >
+
+          <div class="p-8">
+
+            <h3 class="text-2xl font-bold mb-4">
+              Finance Dashboard
+            </h3>
+
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Dashboard moderno con métricas, gráficos y experiencia premium.
+            </p>
+
+            <a href="#contact"
+               class="text-orange-500 font-semibold">
+              Ver proyecto →
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="card bg-black text-white rounded-[2rem] overflow-hidden shadow-lg">
+
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+            class="h-64 w-full object-cover"
+          >
+
+          <div class="p-8">
+
+            <h3 class="text-2xl font-bold mb-4">
+              SaaS Website
+            </h3>
+
+            <p class="text-gray-300 leading-relaxed mb-6">
+              Landing enfocada en conversión con diseño minimalista.
+            </p>
+
+            <a href="#contact"
+               class="text-orange-400 font-semibold">
+              Explorar →
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="card gradient rounded-[2rem] overflow-hidden shadow-lg">
+
+          <img
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop"
+            class="h-64 w-full object-cover"
+          >
+
+          <div class="p-8 text-black">
+
+            <h3 class="text-2xl font-bold mb-4">
+              Mobile UI
+            </h3>
+
+            <p class="leading-relaxed mb-6">
+              Diseño mobile limpio y visualmente potente.
+            </p>
+
+            <a href="#contact"
+               class="font-semibold">
+              Descubrir →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-32 bg-black text-white">
+
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <span class="text-orange-400 uppercase tracking-widest text-sm font-bold">
+        Sobre mí
+      </span>
+
+      <h2 class="section-title mt-6 mb-10">
+        Creatividad +
+        estrategia +
+        desarrollo
+      </h2>
+
+      <p class="text-gray-400 text-lg leading-relaxed max-w-3xl mx-auto">
+
+        Combino diseño moderno con desarrollo frontend para crear experiencias
+        atractivas, funcionales y enfocadas en resultados reales.
+
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-32">
+
+    <div class="max-w-4xl mx-auto px-6">
+
+      <div class="gradient rounded-[3rem] p-[1px]">
+
+        <div class="bg-[#f6f3ee] rounded-[3rem] p-12 text-center">
+
+          <span class="text-orange-500 uppercase tracking-widest text-sm font-bold">
+            Contacto
+          </span>
+
+          <h2 class="section-title mt-6 mb-8">
+            Hablemos de tu idea
+          </h2>
+
+          <p class="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">
+
+            Disponible para proyectos freelance, diseño web y desarrollo frontend.
+
+          </p>
+
+          <form class="grid gap-6">
+
+            <input
+              type="text"
+              placeholder="Nombre"
+              class="bg-white border border-black/10 rounded-2xl px-6 py-4 outline-none focus:border-orange-400"
+            >
+
+            <input
+              type="email"
+              placeholder="Email"
+              class="bg-white border border-black/10 rounded-2xl px-6 py-4 outline-none focus:border-orange-400"
+            >
+
+            <textarea
+              rows="5"
+              placeholder="Tu mensaje"
+              class="bg-white border border-black/10 rounded-2xl px-6 py-4 outline-none focus:border-orange-400 resize-none"
+            ></textarea>
+
+            <button
+              class="btn bg-black text-white py-4 rounded-2xl font-semibold text-lg">
+              Enviar mensaje
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 border-t border-black/10">
+
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-6 items-center justify-between">
+
+      <h3 class="text-2xl font-bold">
+        NOAH.
+      </h3>
+
+      <div class="flex gap-8 text-gray-600">
+
+        <a href="#home" class="hover:text-black transition">
+          Inicio
+        </a>
+
+        <a href="#projects" class="hover:text-black transition">
+          Proyectos
+        </a>
+
+        <a href="#about" class="hover:text-black transition">
+          Sobre mí
+        </a>
+
+        <a href="#contact" class="hover:text-black transition">
+          Contacto
+        </a>
+
+      </div>
+
+      <p class="text-gray-500 text-sm">
+        © 2026 Portfolio Creative
+      </p>
+
+    </div>
+
+  </footer>
+
 </body>
 </html>
